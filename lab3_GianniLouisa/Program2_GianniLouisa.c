@@ -2,7 +2,7 @@
 int main(){
     int user;
     while(user != 0 || user != 1){
-    printf("Give me a number to check or 0 to shutdown: ");
+    printf("Give me a number to check: please press 1 or 0 to shutdown: ");
     scanf("%d",&user);
     if (user == 1 || user == 0){
         return 0;}
