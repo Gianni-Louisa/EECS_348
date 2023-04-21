@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <h1>EECS 348 Lab 7: Practice Three
+        <br>Password Checker!
+    </h1>
+</head>
+<Style>
+    h1{
+        text-align: center;
+        color:yellowgreen
+    }
+    body{
+        color: yellowgreen;
+        background-color: black;
+        text-align: center;
+    }
+</Style>
+<body>
+    First Password: <input type="text" id="pass1" value=""> <br>
+    Second Password: <input type="text" id="pass2" value=""> <br>
+
+    <script type="text/javascript" src="functions.js"></script>
+    <button onclick="Check_Password()">Check Password</button> <br>
+</body>
+
+
+</html>
+<script>
+function Check_Password() {
+    var pass1 = document.getElementById("pass1").value;
+    var pass2 = document.getElementById("pass2").value;
+
+
+    if (pass1.length < 8) {
+        alert("The length of the first password is less than 8 letters!")
+    } else if (pass2.length < 8) {
+        alert("The length of the second password is less than 8 letters!")
+    } else if (pass1 != pass2) {
+        alert("Two passwords don't match!")
+    } else {
+        alert("Everything is good!")
+    }
+}
+</script>
